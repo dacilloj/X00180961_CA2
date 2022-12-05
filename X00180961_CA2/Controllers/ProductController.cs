@@ -30,7 +30,7 @@ namespace X00180961_CA2.Controllers
         [HttpGet("{minprice}{maxprice")]
         public IEnumerable<Product> GetAllListings(int minprice, int maxprice)
         {
-            var listing = _db.GetProductsByCategory(minprice, maxprice).ToList();
+            var listing = _db.GetProductsByPrice(minprice, maxprice).ToList();
             //return Ok(_db.GetStocks().ToList());      // 200 OK, listings serialized in response body
             return listing;
         }

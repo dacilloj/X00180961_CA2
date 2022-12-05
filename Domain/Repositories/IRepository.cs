@@ -9,6 +9,6 @@ namespace Domain.Repositories
     {
         public IEnumerable<Product> GetAll();
         public IEnumerable<Product> GetProductsByPrice(double pricemin, double pricemax);
-        public IEnumerable<Product> GetProductsByCategory(Categories.allowedCategoies cat, int rating)
+        public IEnumerable<Product> GetProductsByCategory(Categories.allowedCategoies cat, int rating);
     }
 }
