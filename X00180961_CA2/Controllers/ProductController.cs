@@ -18,16 +18,17 @@ namespace X00180961_CA2.Controllers
             _db = db; // new MockDB();
         }
 
-        // GET https://localhost:7117/api/Stock   (api/stock is the URL that will get us to this controller .. 
-        [HttpGet("api/products/{category:string}/{rating:int")]
+        // GET https://localhost:7117/api/Product   (api/stock is the URL that will get us to this controller .. 
+        [HttpGet]
+        [Route("Product/{cat}/{rating}")]
         public IEnumerable<Product> GetAllListings(Categories.allowedCategoies cat, int rating)
         {
             var listing = _db.GetProductsByCategory(cat, rating).ToList();
             //return Ok(_db.GetStocks().ToList());      // 200 OK, listings serialized in response body
             return listing;            
         }
-
-        [HttpGet("api/products/{minprice:double}/{maxprice:double")]
+        [Route("Product/{minprice}/{maxprice}")]
+        [HttpGet]
         public IEnumerable<Product> GetAllListings(int minprice, int maxprice)
         {
             var listing = _db.GetProductsByPrice(minprice, maxprice).ToList();

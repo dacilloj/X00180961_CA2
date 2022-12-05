@@ -9,6 +9,8 @@ namespace Domain
 {
     public class Product
     {
+
+        //github https://github.com/dacilloj/X00180961_CA2
         public int ProductId { get; set; }
 
         [Required]
