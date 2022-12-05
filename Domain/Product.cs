@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 using System.Text;
+using static Domain.Categories;
 
 namespace Domain
 {
@@ -19,8 +20,8 @@ namespace Domain
         [Range(0,5)]
         public int Rating { get; set; }
 
-        public Categories category { get; set; }
+        public allowedCategoies category { get; set; }
 
-        public Sizes size { get; set; }
+        public allowedSizes size { get; set; }
     }
 }
