@@ -38,6 +38,8 @@ namespace X00180961_CA2
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
             //app.UseSwagger();
