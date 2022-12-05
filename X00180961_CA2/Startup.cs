@@ -1,3 +1,4 @@
+using Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,7 +28,8 @@ namespace X00180961_CA2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+            services.AddScoped<IRepository, MockDB>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
