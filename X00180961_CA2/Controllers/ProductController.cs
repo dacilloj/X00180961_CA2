@@ -19,7 +19,7 @@ namespace X00180961_CA2.Controllers
         }
 
         // GET https://localhost:7117/api/Stock   (api/stock is the URL that will get us to this controller .. 
-        [HttpGet("{category}")]
+        [HttpGet("api/products/{category:string}/{rating:int")]
         public IEnumerable<Product> GetAllListings(Categories.allowedCategoies cat, int rating)
         {
             var listing = _db.GetProductsByCategory(cat, rating).ToList();
@@ -27,7 +27,7 @@ namespace X00180961_CA2.Controllers
             return listing;            
         }
 
-        [HttpGet("{minprice}{maxprice")]
+        [HttpGet("api/products/{minprice:double}/{maxprice:double")]
         public IEnumerable<Product> GetAllListings(int minprice, int maxprice)
         {
             var listing = _db.GetProductsByPrice(minprice, maxprice).ToList();

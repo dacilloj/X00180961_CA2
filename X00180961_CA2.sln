@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessEF", "DataAccessEF\DataAccessEF.csproj", "{35AE190B-7C7C-4283-A38E-F266790D2623}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_test", "API_test\API_test.csproj", "{3DEBE17F-632E-4166-952E-7D964F292900}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{35AE190B-7C7C-4283-A38E-F266790D2623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AE190B-7C7C-4283-A38E-F266790D2623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AE190B-7C7C-4283-A38E-F266790D2623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DEBE17F-632E-4166-952E-7D964F292900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEBE17F-632E-4166-952E-7D964F292900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DEBE17F-632E-4166-952E-7D964F292900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DEBE17F-632E-4166-952E-7D964F292900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
