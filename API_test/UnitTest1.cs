@@ -19,7 +19,7 @@ namespace API_test
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:7117/");
+                    client.BaseAddress = new Uri("http://localhost:38138/");
                     client.DefaultRequestHeaders.
                     Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 

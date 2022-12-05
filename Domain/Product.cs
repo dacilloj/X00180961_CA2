@@ -11,16 +11,17 @@ namespace Domain
     {
 
         //github https://github.com/dacilloj/X00180961_CA2
+        
         public int ProductId { get; set; }
 
         [Required]
-        //[StringLength()]
+        [StringLength(100, MinimumLength = 2)]
         public string ProductName { get; set; } = ""; 
 
         public double Price { get; set; }
 
         [Range(0,5)]
-        public int Rating { get; set; }
+        public int? Rating { get; set; }
 
         public allowedCategoies category { get; set; }
 
